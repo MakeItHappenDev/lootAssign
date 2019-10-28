@@ -36,6 +36,7 @@ type Zone {
 type Role {
   id:ID!
   name:String
+  loots:[Loot!]!
 }
 
 type Char {

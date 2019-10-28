@@ -25,7 +25,7 @@ loots.forEach(loot=>{
   
   //Manage roles
   loot.roles = loot.roles.map(r => roles.find(zr => zr.id === r))
-
+  loot.roles.forEach(role=>role.loots.push(loot))
 })
 
 
