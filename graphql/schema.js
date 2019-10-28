@@ -29,19 +29,22 @@ type Boss {
 type Zone {
   id:ID!
   name:String!
-  loots:[Loot!]!
+  loots:[Loot!]! 
   bosses:[Boss!]!
 }
 
 type Role {
   id:ID!
   name:String
+  loots:[Loot!]!
+  chars:[Char!]!
 }
 
 type Char {
+  id:ID!
   name:String!
   role:[Role!]!
-  class:Class!
+  class:Class! 
   gotIt:[Loot!]!
 }
 
@@ -58,14 +61,13 @@ enum Class {
 }
 
 type Assign {
-  id:ID!
+  id:ID! 
   item:Loot!
   char:Char!
 }
 
 type Query {
-  hello: String
-  bosses:[Boss!]!
-  zones:[Zone!]!
+    bosses:[Boss!]!
+    zones:[Zone!]!
 }
 `
