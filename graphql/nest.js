@@ -3,15 +3,9 @@ const bosses = require('../data/bosses')
 const loots = require('../data/loots')
 const roles = require('../data/roles')
 
-zones.forEach(zone=>{
-  //zone.bosses = zone.bosses.map(b => bosses.find(zb => zb.id === b))
-  //zone.loots = zone.loots.map(l => loots.find(zl => l === zl.id))
-})
-
 bosses.forEach(boss=>{
   boss.zone = zones.find(z=>z.id===boss.zone)
   boss.zone.bosses.push(boss)
-  //boss.loots = boss.loots.map(l => loots.find(bl => l === bl.id))
 })
 
 loots.forEach(loot=>{
@@ -32,5 +26,6 @@ loots.forEach(loot=>{
 module.exports = {
   zones,
   bosses,
-  loots
+  loots,
+  roles
 }
