@@ -49,7 +49,7 @@ module.exports = [
     id:"Garr",
     name:"Garr",
     zone:"MoltenCore",
-    loots:["ArcanistCrown", "FelheartHorns", "CircletProphecy", "NightslayerCover", "CenarionHelm", "EarthfuryHelmet", "GiantstalkerHelmet", "LawbringerHelm", "HelmMight", "DrillborerDisk", "BrutalityBlade", "AurastoneHammer", "GutgoreRipper", "FlameguardGauntlets", "FireRunedGrimoire", "ManaIgnitingCord", "SabatonsFlamewalker", "FlamewakerLegplates", "DeepEarthSpaulders", "MagmaTemperedBoots", "AgedCoreLeatherGloves", "QuickStrikeRing", "TalismanEphemeralPower", "ObsidianEdgedBlade", "BindingsWindseeker", "TalismanBindingShard"],
+    loots:[],
   },
   {
     id:"Geddon",

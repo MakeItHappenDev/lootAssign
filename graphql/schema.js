@@ -3,7 +3,7 @@ type Loot {
   id:ID!
   name:String!
   zone:Zone!
-  from:Boss!
+  from:[Boss!]!
   roles:[Role!]!
   gotIt:[Char!]!
   assign:[Assign!]!

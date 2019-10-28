@@ -20,7 +20,7 @@ const query = `{
 const App = props => 
   <>
     <h1>The response from the server is:</h1>
-    <pre>{JSON.stringify(props.bosses,null,1)}</pre>
+    <pre>{JSON.stringify(props.loots,null,1)}</pre>
   </>;
 
 App.getInitialProps = async ({req}) => {
