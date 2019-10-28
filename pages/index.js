@@ -2,13 +2,16 @@ import axios from "axios";
 import url from '../helpers/url'
 
 const query = `{ 
-  bosses{
+  loots{
     name
-    loots{
+    quality
+    roles{
       name
-      quality
     }
     zone{
+      name
+    }
+    from{
       name
     }
   }

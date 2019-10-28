@@ -16,7 +16,7 @@ bosses.forEach(boss=>{
 loots.forEach(loot=>{
   loot.zone = zones.find(z=>z.id===loot.zone)
   loot.from = loot.from.map(b => bosses.find(zb => zb.id === b))
-  loot.role = loot.role.map(r => roles.find(zr => zr.id === r))
+  loot.roles = loot.roles.map(r => roles.find(zr => zr.id === r))
 })
 
 

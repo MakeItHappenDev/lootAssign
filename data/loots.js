@@ -19,9 +19,9 @@ module.exports = [
     name:"Arcanist Crown",
     zone:"MoltenCore",
     from:["Garr"],
-    role:["Caster"],
+    roles:["Caster"],
     iLvl:	66,
-    quality:"epic",
+    quality:"Epic",
     rate:[22]
   },
   {
@@ -29,7 +29,7 @@ module.exports = [
     name:"Felheart Horns",
     zone:"MoltenCore",
     from:["Garr"],
-    role:["Caster"],
+    roles:["Caster"],
     iLvl:	66
   },
   {
@@ -37,7 +37,7 @@ module.exports = [
     name:"Circlet of Prophecy",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	66
   },
   {
@@ -45,7 +45,7 @@ module.exports = [
     name:"Nightslayer Cover",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	66
   },
   {
@@ -53,7 +53,7 @@ module.exports = [
     name:"Cenarion Helm",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	66
   },
   {
@@ -61,7 +61,7 @@ module.exports = [
     name:"Earthfury Helmet",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	66
   },
   {
@@ -69,7 +69,7 @@ module.exports = [
     name:"Giantstalker's Helmet",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	66
   },
   {
@@ -77,7 +77,7 @@ module.exports = [
     name:"Lawbringer Helm",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	66
   },
   {
@@ -85,7 +85,7 @@ module.exports = [
     name:"Helm of Might",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	66
   },
   {
@@ -93,7 +93,7 @@ module.exports = [
     name:"Drillborer Disk",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	67
   },
   {
@@ -101,7 +101,7 @@ module.exports = [
     name:"Brutality Blade",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	70
   },
   {
@@ -109,7 +109,7 @@ module.exports = [
     name:"Aurastone Hammer",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	69
   },
   {
@@ -117,7 +117,7 @@ module.exports = [
     name:"Gutgore Ripper",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	69
   },
   {
@@ -125,7 +125,7 @@ module.exports = [
     name:"Flameguard Gauntlets",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	69
   },
   {
@@ -133,7 +133,7 @@ module.exports = [
     name:"Fire Runed Grimoire",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	70
   },
   {
@@ -141,7 +141,7 @@ module.exports = [
     name:"Mana Igniting Cord",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	71
   },
   {
@@ -149,7 +149,7 @@ module.exports = [
     name:"Sabatons of the Flamewalker",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	68
   },
   {
@@ -157,7 +157,7 @@ module.exports = [
     name:"Flamewaker Legplates",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	61
   },
   {
@@ -165,7 +165,7 @@ module.exports = [
     name:"Deep Earth Spaulders",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	71
   },
   {
@@ -173,7 +173,7 @@ module.exports = [
     name:"Magma Tempered Boots",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	70
   },
   {
@@ -181,7 +181,7 @@ module.exports = [
     name:"Aged Core Leather Gloves",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	69
   },
   {
@@ -189,7 +189,7 @@ module.exports = [
     name:"Quick Strike Ring",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	67
   },
   {
@@ -197,7 +197,7 @@ module.exports = [
     name:"Talisman of Ephemeral Power",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	66
   },
   {
@@ -205,7 +205,7 @@ module.exports = [
     name:"Obsidian Edged Blade",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	68
   },
   {
@@ -213,7 +213,7 @@ module.exports = [
     name:"Bindings of the Windseeker",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	70
   },
   {
@@ -221,7 +221,7 @@ module.exports = [
     name:"Talisman of Binding Shard",
     zone:"MoltenCore",
     from:["Garr"],
-    role:[],
+    roles:[],
     iLvl:	80
   },
 ]
