@@ -1,4 +1,5 @@
 import axios from "axios";
+import url from '../helpers/url'
 
 const query = `{ 
   bosses{
@@ -19,8 +20,9 @@ const App = props =>
     <pre>{JSON.stringify(props.bosses,null,1)}</pre>
   </>;
 
-App.getInitialProps = async () => {
-  const response = await axios.post(`http://localhost:4000/api/graphql`, {
+App.getInitialProps = async ({req}) => {
+  const baseURL = url(req)
+  const response = await axios.post(`${baseURL}/api/graphql`, {
     query
   });
 
