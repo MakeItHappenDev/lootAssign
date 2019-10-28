@@ -36,8 +36,6 @@ type Zone {
 type Role {
   id:ID!
   name:String
-  loots:[Loot!]!
-  chars:[Char!]!
 }
 
 type Char {
@@ -69,5 +67,6 @@ type Assign {
 type Query {
     bosses:[Boss!]!
     zones:[Zone!]!
+    loots:[Loot!]!
 }
 `
