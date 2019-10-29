@@ -6,7 +6,7 @@ type Loot {
   from:[Boss!]!
   roles:[Role!]!
   gotIt:[Char!]!
-  assign:[Assign!]!
+  assign:[Char!]!
   iLvl:Int
   quality:Quality
 }
@@ -45,6 +45,7 @@ type Char {
   role:[Role!]!
   class:Class! 
   gotIt:[Loot!]!
+  assign:[Loot!]!
 }
 
 enum Class {
@@ -59,15 +60,10 @@ enum Class {
   Shaman
 }
 
-type Assign {
-  id:ID! 
-  item:Loot!
-  char:Char!
-}
-
 type Query {
     bosses:[Boss!]!
     zones:[Zone!]!
     loots:[Loot!]!
+    roles:[Role!]!
 }
 `
