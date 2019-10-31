@@ -27,5 +27,13 @@ module.exports = [
     class:"Mage",
     gotIt:[],
     assign:[]
+  },
+  {
+    id:"Varbane",
+    name:"Varbane",
+    roles:["Caster"],
+    class:"Warlock",
+    gotIt:[],
+    assign:[]
   }
 ]
