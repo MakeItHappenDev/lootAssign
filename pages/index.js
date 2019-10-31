@@ -5,8 +5,17 @@ const query = `{
   loots{
     name
     quality
+    assign{
+      name
+    }
+    gotIt{
+      name
+    }
     roles{
       name
+      chars{
+        name
+      }
     }
     zone{
       name

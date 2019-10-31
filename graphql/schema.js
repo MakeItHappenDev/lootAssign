@@ -36,13 +36,14 @@ type Zone {
 type Role {
   id:ID!
   name:String
+  chars:[Char!]!
   loots:[Loot!]!
 }
 
 type Char {
   id:ID!
   name:String!
-  role:[Role!]!
+  roles:[Role!]!
   class:Class! 
   gotIt:[Loot!]!
   assign:[Loot!]!

@@ -3,6 +3,6 @@
 module.exports = [
   {
     loot:"ArcanistCrown",
-    char:"Pleingaz"
+    char:"Magebane"
   }
 ]
