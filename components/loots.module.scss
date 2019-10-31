@@ -1,0 +1,18 @@
+.loots{
+  > article {
+    display:flex;
+    flex-wrap: nowrap;
+    border-bottom:1px solid #c0c0c0;
+    > h1 {
+      margin:0;
+      padding:0.5rem;
+      flex:1 1 25%
+    }
+    > p {
+      margin:0;
+      padding:0.5rem;
+      border-left:1px solid #c0c0c0;
+      flex:1 1 25%;
+    }
+  }
+}

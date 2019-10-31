@@ -1,19 +1,24 @@
 import axios from "axios";
 import url from '../helpers/url'
+import Loots from '../components/loots'
 
 const query = `{ 
   loots{
+    id
     name
     quality
     assign{
+      id
       name
     }
     gotIt{
+      id
       name
     }
     roles{
       name
       chars{
+        id
         name
       }
     }
@@ -28,8 +33,7 @@ const query = `{
 
 const App = props => 
   <>
-    <h1>The response from the server is:</h1>
-    <pre>{JSON.stringify(props.loots,null,1)}</pre>
+    <Loots {...props}/>
   </>;
 
 App.getInitialProps = async ({req}) => {
