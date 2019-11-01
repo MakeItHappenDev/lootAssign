@@ -3,8 +3,6 @@ const bosses = require('../data/bosses')
 const loots = require('../data/loots')
 const roles = require('../data/roles')
 const chars = require('../data/chars')
-const gotit = require('../data/gotit')
-const assign = require('../data/assign')
 
 bosses.forEach(boss=>{
   boss.zone = zones.find(z=>z.id===boss.zone)
@@ -16,21 +14,16 @@ chars.forEach(char=>{
   char.roles.forEach(role => {
     role.chars.push(char)
   })
+  char.gotIt.forEach(got => {
+    got = loots.find(l => l.id === got)
+    got.gotIt.push(char)
+  })
+  char.assign.forEach(assi => {
+    got = loots.find(l => l.id === assi)
+    got.assign.push(char)
+  })
 })
 
-gotit.forEach(got => {
-  const loot = loots.find(l => l.id === got.loot)
-  const char = chars.find(c => c.id === got.char)
-  loot.gotIt.push(char)
-  char.gotIt.push(loot)
-})
-
-assign.forEach(assi => {
-  const loot = loots.find(l => l.id === assi.loot)
-  const char = chars.find(c => c.id === assi.char)
-  loot.assign.push(char)
-  char.assign.push(loot)
-})
 
 loots.forEach(loot=>{
   //Manage zones

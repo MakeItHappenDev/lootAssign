@@ -18,14 +18,14 @@ module.exports = [
     roles:["Caster"],
     class:"Mage",
     gotIt:[],
-    assign:[]
+    assign:["ArcanistCrown"]
   },
   {
     id:"Magebane",
     name:"Magebane",
     roles:["Caster"],
     class:"Mage",
-    gotIt:[],
+    gotIt:["ArcanistCrown"],
     assign:[]
   },
   {

@@ -2,6 +2,8 @@ import axios from "axios";
 import url from '../helpers/url'
 import Loots from '../components/loots'
 
+import '../styles/general.scss'
+
 const query = `{ 
   loots{
     id
@@ -10,16 +12,19 @@ const query = `{
     assign{
       id
       name
+      class
     }
     gotIt{
       id
       name
+      class
     }
     roles{
       name
       chars{
         id
         name
+        class
       }
     }
     zone{
