@@ -12,19 +12,25 @@ const query = `{
     assign{
       id
       name
-      class
+      class{
+        id
+      }
     }
     gotIt{
       id
       name
-      class
+      class{
+        id
+      }
     }
-    roles{
-      name
+    classes{
+      id
       chars{
         id
         name
-        class
+        class{
+          id
+        }
       }
     }
     zone{

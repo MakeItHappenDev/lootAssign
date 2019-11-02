@@ -4,7 +4,7 @@ type Loot {
   name:String!
   zone:Zone!
   from:[Boss!]!
-  roles:[Role!]!
+  classes:[Class!]!
   gotIt:[Char!]!
   assign:[Char!]!
   iLvl:Int
@@ -33,9 +33,8 @@ type Zone {
   bosses:[Boss!]!
 }
 
-type Role {
+type Class {
   id:ID!
-  name:String
   chars:[Char!]!
   loots:[Loot!]!
 }
@@ -43,28 +42,15 @@ type Role {
 type Char {
   id:ID!
   name:String!
-  roles:[Role!]!
   class:Class! 
   gotIt:[Loot!]!
   assign:[Loot!]!
-}
-
-enum Class {
-  Mage
-  Warlock
-  Warrior
-  Rogue
-  Hunter
-  Druid
-  Priest
-  Paladin
-  Shaman
 }
 
 type Query {
     bosses:[Boss!]!
     zones:[Zone!]!
     loots:[Loot!]!
-    roles:[Role!]!
+    classes:[Class!]!
 }
 `

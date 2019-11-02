@@ -1,7 +1,7 @@
 const zones = require('../data/zones')
 const bosses = require('../data/bosses')
 const loots = require('../data/loots')
-const roles = require('../data/roles')
+const classes = require('../data/classes')
 const chars = require('../data/chars')
 
 bosses.forEach(boss=>{
@@ -10,10 +10,9 @@ bosses.forEach(boss=>{
 })
 
 chars.forEach(char=>{
-  char.roles = char.roles.map(r => roles.find(rf => rf.id === r))
-  char.roles.forEach(role => {
-    role.chars.push(char)
-  })
+  char.class = classes.find(c => c.id === char.class)
+  char.class.chars.push(char)
+
   char.gotIt.forEach(got => {
     got = loots.find(l => l.id === got)
     got.gotIt.push(char)
@@ -35,8 +34,8 @@ loots.forEach(loot=>{
   loot.from.forEach(boss=>boss.loots.push(loot))
   
   //Manage roles
-  loot.roles = loot.roles.map(r => roles.find(zr => zr.id === r))
-  loot.roles.forEach(role=>role.loots.push(loot))
+  loot.classes = loot.classes.map(c => classes.find(zc => zc.id === c))
+  loot.classes.forEach(c=>c.loots.push(loot))
 })
 
 
@@ -44,6 +43,6 @@ module.exports = {
   zones,
   bosses,
   loots,
-  roles,
+  classes,
   chars
 }
