@@ -6,7 +6,7 @@ export default (props) => {
 
   return(
     <p className={styles.para}>
-      <span className={styles[props.class.id]}>{props.name}</span> 
+      <span className={styles[props.class.name]}>{props.name}</span> 
       {props.assign && <>
         <button>Got it</button>
         <button>remove Assign</button>

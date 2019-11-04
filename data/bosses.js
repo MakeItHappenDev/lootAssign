@@ -10,75 +10,63 @@ type Boss {
 
 module.exports = [
   {
-    id:"Onyxia",
+    name:"Onyxia",
     zone:"Onyxia",
     loots:[],
-    name:"Onyxia"
   },
   {
-    id:"Lucifron",
     name:"Lucifron",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   },
   {
-    id:"Gehennas",
     name:"Gehennas",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   },
   {
-    id:"Shazzrah",
     name:"Shazzrah",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   },
   {
-    id:"Sulfuron",
     name:"Sulfuron Harbringer",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   },
   {
-    id:"Magmadar",
     name:"Magmadar",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   },
   {
-    id:"Garr",
     name:"Garr",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   },
   {
-    id:"Geddon",
     name:"Baron Geddon",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   },
   {
-    id:"Golemagg",
     name:"Golemagg the Incinerator",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   },
   {
-    id:"Executus",
     name:"Majordomo Executus",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   },
   {
-    id:"Ragnaros",
     name:"Ragnaros",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   },
   {
-    id:"TrashMC",
     name:"Trash Molten Core",
-    zone:"MoltenCore",
+    zone:"Molten Core",
     loots:[],
   }
 ]

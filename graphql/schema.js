@@ -1,7 +1,6 @@
 module.exports = `
 type Loot {
-  id:ID!
-  name:String!
+  name:ID!
   zone:Zone!
   from:[Boss!]!
   classes:[Class!]!
@@ -20,28 +19,25 @@ enum Quality{
 }
 
 type Boss {
-  id:ID!
+  name:ID!
   zone:Zone!
   loots:[Loot!]!
-  name:String!
 }
 
 type Zone {
-  id:ID!
-  name:String!
+  name:ID!
   loots:[Loot!]! 
   bosses:[Boss!]!
 }
 
 type Class {
-  id:ID!
+  name:ID!
   chars:[Char!]!
   loots:[Loot!]!
 }
 
 type Char {
-  id:ID!
-  name:String!
+  name:ID!
   class:Class! 
   gotIt:[Loot!]!
   assign:[Loot!]!

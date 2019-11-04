@@ -6,30 +6,26 @@ import '../styles/general.scss'
 
 const query = `{ 
   loots{
-    id
     name
     quality
     assign{
-      id
       name
       class{
-        id
+        name
       }
     }
     gotIt{
-      id
       name
       class{
-        id
+        name
       }
     }
     classes{
-      id
+      name
       chars{
-        id
         name
         class{
-          id
+          name
         }
       }
     }

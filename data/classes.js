@@ -7,47 +7,47 @@ type Class {
 */
 
 module.exports = [
-  { id:"Druid",
+  { name:"Druid",
     chars:[],
     loots:[]
   },
   {
-    id:"Hunter",
+    name:"Hunter",
     chars:[],
     loots:[]
   },
   {
-    id:"Mage",
+    name:"Mage",
     chars:[],
     loots:[]
   },
   {
-    id:"Paladin",
+    name:"Paladin",
     chars:[],
     loots:[]
   },
   {
-    id:"Priest",
+    name:"Priest",
     chars:[],
     loots:[]
   },
   {
-    id:"Rogue",
+    name:"Rogue",
     chars:[],
     loots:[]
   },
   {
-    id:"Shaman",
+    name:"Shaman",
     chars:[],
     loots:[]
   },
   {
-    id:"Warlock",
+    name:"Warlock",
     chars:[],
     loots:[]
   },
   {
-    id:"Warrior",
+    name:"Warrior",
     chars:[],
     loots:[]
   }

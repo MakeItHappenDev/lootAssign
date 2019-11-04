@@ -9,13 +9,11 @@ type Zone {
 
 module.exports = [
   {
-    id:"MoltenCore",
     name:"Molten Core",
     loots:[],
     bosses:[]
   },
   {
-    id:"Onyxia",
     name:"Onyxia",
     loots:[],
     bosses:[],
