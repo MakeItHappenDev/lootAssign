@@ -4,7 +4,16 @@ import Loots from '../components/loots'
 
 import '../styles/general.scss'
 
-const query = `{ 
+const query = `{
+  zones{
+    name
+    bosses{
+      name
+    }
+  }
+  classes{
+    name
+  }
   loots{
     name
     quality

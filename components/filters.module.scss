@@ -1,0 +1,15 @@
+.filters{
+  article{
+    display:flex;
+    flex-wrap: wrap;
+    h1{
+      flex:0 0 100%;
+    }
+    p {
+      flex:0 0 auto;
+      padding:0.5rem;
+      border:1px solid #c0c0c0;
+      margin-right:1rem;
+    }
+  }
+}

@@ -5,7 +5,7 @@ const root = {
   zones: () => data.zones,
   bosses: () => data.bosses,
   loots: () => data.loots,
-  roles: () => data.roles
+  classes: () => data.classes
 };
 
 module.exports = root
