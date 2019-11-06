@@ -22,23 +22,34 @@ export default (props) => {
     setBossFilters(finalFilter)
   }
 
-  const toggleClassFilter = (name) => {
-    if(classFilters.includes(name)){
-      setClassFilters(classFilters.filter(c => c !== name))
-    }
-    else{
-      setClassFilters([...classFilters,name])
-    }
+  const toggleClassFilter = (classes) => {
+    let finalFilter = classFilters
+    classes.forEach(c=>{
+      if(classFilters.includes(c)){
+        finalFilter = finalFilter.filter(b => b !== c)
+      }
+      else{
+        finalFilter = [...finalFilter,c]
+      }
+    })
+    setClassFilters(finalFilter)
   }
 
   let loots = props.loots
   if(bossFilters.length > 0){
     const isSelected = (boss) => {
-      console.log(bossFilters,boss.name)
       return bossFilters.includes(boss.name)
     }
     loots = loots.filter(l=>{
       return l.from.some(isSelected)
+    })
+  }
+  if(classFilters.length > 0){
+    const isSelected = (clas) => {
+      return classFilters.includes(clas.name)
+    }
+    loots = loots.filter(l=>{
+      return l.classes.some(isSelected)
     })
   }
 

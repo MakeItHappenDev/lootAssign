@@ -32,7 +32,7 @@ export default (props) => {
 
   return(
     <article>
-      <h1 onClick={()=>toggleSelected(selected)}>{props.name}</h1>
+      <h1 onClick={()=>toggleSelected(selected)} className={selected?props.selected:null}>{props.name}</h1>
       {props.bosses.map(b => <Boss key={`bossFilter-${b.name}`} {...b} toggleBossFilter={props.toggleBossFilter} bossFilters={props.bossFilters} selected={props.selected}/>)}
     </article>
   )

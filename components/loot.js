@@ -11,7 +11,7 @@ export default (props) => {
   return(
     <article>
       <h1>{props.name}<br/>({props.zone.name} / {props.from.map(b=>b.name).join(', ')})</h1>
-      <div>{props.classes.map(c => c.id)}</div>
+      <div>{props.classes.map(c => c.name)}</div>
       <div>{props.assign.map(a => <Char key={`assign-${props.id}-${a.id}`} assign={true} {...a}/>)}</div>
       <div>{props.gotIt.map(g => <Char key={`got-${props.id}-${g.id}`} gotIt={true} {...g}/>)}</div>
       <div>{pool2.map(p => <Char key={`pool-${props.id}-${p.id}`} {...p}/>)}</div>

@@ -11,7 +11,7 @@ export default (props) => {
       {props.zones.map(z=><Zone selected={styles.selected} {...props} {...z} key={`zoneFilter-${z.name}`}/>)}
       <article>
         <h1>Classes</h1>
-        {props.classes.map(c => <Class key={`classFilter-${c.name}`} {...c}/>)}
+        {props.classes.map(c => <Class key={`classFilter-${c.name}`} selected={styles.selected} {...props} {...c}/>)}
       </article>
     </section>
   )
