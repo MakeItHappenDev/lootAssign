@@ -2,14 +2,20 @@
   article{
     display:flex;
     flex-wrap: wrap;
-    h1{
+    > h1{
       flex:0 0 100%;
     }
-    p {
+    > p {
       flex:0 0 auto;
       padding:0.5rem;
       border:1px solid #c0c0c0;
       margin-right:1rem;
+      user-select: none;
+      cursor: pointer;
+    }
+    > p.selected {
+      color:#303030;
+      background-color:#c0c0c0;
     }
   }
 }

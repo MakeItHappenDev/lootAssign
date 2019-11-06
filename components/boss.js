@@ -2,6 +2,6 @@ import React from 'react'
 
 export default (props) => {
   return(
-    <p>{props.name}</p>
+    <p className={props.bossFilters.includes(props.name)?props.selected:null} onClick={()=>props.toggleBossFilter([props.name])}>{props.name}</p>
   )
 }
