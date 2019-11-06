@@ -3,7 +3,6 @@ import Loot from './loot'
 import Filters from './filters'
 
 import styles from './loots.module.scss'
-import { isArray } from 'util'
 
 export default (props) => {
 
@@ -11,7 +10,6 @@ export default (props) => {
   const [classFilters,setClassFilters] = useState([])
 
   const toggleBossFilter = (names) => {
-    console.log("toggleBossFilter",names)
     let finalFilter = bossFilters
     names.forEach(n=>{
       if(bossFilters.includes(n)){
@@ -33,12 +31,23 @@ export default (props) => {
     }
   }
 
+  let loots = props.loots
+  if(bossFilters.length > 0){
+    const isSelected = (boss) => {
+      console.log(bossFilters,boss.name)
+      return bossFilters.includes(boss.name)
+    }
+    loots = loots.filter(l=>{
+      return l.from.some(isSelected)
+    })
+  }
+
   return(
     <>
       <Filters {...props} {...{bossFilters,toggleBossFilter,classFilters,toggleClassFilter}}/>
       <section className={styles.loots}>
         <article><h1>Item</h1><div>classes</div><div>Assigns</div><div>Got it</div><div>Pool</div></article>
-        {props.loots.map(l=><Loot key={`loot-${l.name}`} {...l}/>)}
+        {loots.map(l=><Loot key={`loot-${l.name}`} {...l}/>)}
       </section>
     </>
   )
